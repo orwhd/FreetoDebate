@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Oswald:wght@500;700&display=swap');
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-app-bg text-gray-200 font-sans antialiased overflow-auto;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-app-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-app-border rounded-full hover:bg-app-primary/50 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  .panel-border {
+    @apply border border-app-border/50 bg-app-panel/80 backdrop-blur-sm;
+  }
+}

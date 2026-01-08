@@ -1,0 +1,17 @@
+langchain_community
+openai
+sentence_transformers
+faiss-cpu
+pyvis
+scikit-learn
+fastapi
+uvicorn
+websockets
+python-multipart
+numpy
+selenium
+webdriver_manager
+beautifulsoup4
+python-dotenv
+requests
+networkx
